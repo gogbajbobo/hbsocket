@@ -5,4 +5,6 @@ io.on('connection', client => {
     debug(client.conn.id + " connection");
 });
 
-io.listen(3000);
+const port = 3000;
+io.listen(port);
+debug('HomeBudget SocketIO started on: ' + port);
